@@ -32,31 +32,18 @@ body{
     overflow-x: hidden;
 }
 .navs{
-
   top:0;
-
   left:0;
-
   position: fixed;
-
   background:linear-gradient(var(--color4),var(--color5));
-
     flex-wrap: wrap;
-
   display: flex;
-
   flex: 1 1 100%;
-
   padding: 10px 0;
-
   justify-content: space-between;
-
   align-items: center;
-
   max-width: 100%;
-
   width: 100%;
-
   z-index: 99;
 
 }
