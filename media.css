@@ -19,11 +19,26 @@
     overflow-x: hidden;
     min-height: 100vh;
     }
-        #bars{
+        #ham{
         display: block;
         font-size: 20px;
         margin-right: 10px;
     }
+  #ham:hover{
+
+      background: var(--color3);
+
+      color: red;
+
+    }
+
+    .navs{
+
+      top:0;
+
+      left: 0;
+
+          }
     nav{
         top:10px;
         justify-content: space-between;
@@ -38,7 +53,7 @@
     .Homeimage img{
         display: none;
     }
-    .navLinks{
+    ol{
         display: flex;
         flex-direction: column;
         flex: 1 1 1;
@@ -52,36 +67,31 @@
         transition: 2s;
         z-index: 99;
     }
-    .navLinks .show{
+  ol.show{
       transform: translateX(0);
     }
-    .navLinks li{
+    ol li{
         text-align: center;
         color: var(--color2);
        transition: 2s;
         font-weight: 600;
         padding: 10px;
     }
-    .navLinks li:hover{
+ ol li:hover{
       width:100%;
         background: var(--color3);
         color: var(--color2);
     }
-    nav img{
-      width: 50px;
-      height: 50px;
-    }
-    .nav-links li a{
+ol li a{
         position: relative;
         text-decoration: none;
         color: inherit;
         transition: 3s;
-        font-size: 13px;
+        font-size: 16px;
     }
-    .nav-links li a:before{
+ ol li a:before{
       display:none;
     }
-    
     .home-group{
   position:relative;
   transform:translate(0);
