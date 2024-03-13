@@ -66,6 +66,7 @@
         transform: translateX(100%);
         transition: 2s;
         z-index: 99;
+      transition:2s;
     }
   ol.show{
       transform: translateX(0);
