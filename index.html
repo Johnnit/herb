@@ -12,17 +12,21 @@
   <script src = "script.js" type = "text/javascript"></script>
 </head>
 <body>
-    <nav>
-        <img src="herb.png" alt="" class="image">
-        <span class="fa fa-bars" id="bars"></span>
-        <ol class="navLinks">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#product">Products</a></li>
-                <li><a href="#reviews">Reviews</a></li>
-              </ol>
-              <button class="contact styled"><a href="tel:09057326602">contact</a> </button>
-            </nav>
+    <div class="navs">
+         <img src="herb.png">
+         <i class="fa fa-bars" id="ham"></i>
+         <ol>
+           <li><a href="#home">Home</a></li>
+
+           <li><a href="#about">About</a></li>
+
+        <li><a href="#product">Products</a></li>
+
+         <li><a href="#reviews">Reviews</a></li>
+
+         </ol>
+        <button class="contact styled"><a href="tel:09057326602">contact</a> </button>
+    </div>
     <!--Home section-->
     <section class="home" id="home">
  
@@ -131,5 +135,32 @@
             </ul>
         </div>
     </footer>   
+       <script>
+
+      let ham = document.getElementById("ham");
+
+let navLinks = document.querySelector("ol");
+
+ham.addEventListener("click",(e)=>{
+
+  ham.classList.toggle("fa-times");
+
+  navLinks.classList.toggle("show");
+
+})
+
+document.querySelectorAll("li a").forEach((e)=>{
+
+  e.addEventListener("click",(e)=>{
+
+  navLinks.classList.remove("show");
+
+  ham.classList.remove("fa-times");
+
+})
+
+})
+
+    </script>
     </body>
 </html>
